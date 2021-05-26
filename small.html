@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>small |big</title>
+    <style>
+        .bigbox{
+            display: flex;
+        };
+        .onebox,.twobox,.threebox{
+            width: 200px;
+            height: 400px;
+            margin: auto;
+        };
+        .onebox{
+            background-color: khaki;
+        };
+        .threebox{
+            background-color: lightblue;
+        };
+        .twobox{
+            background-color: lightgreen;
+        }
+    </style>
 </head>
 <body>
-    <h1>welcome to Hangzhou !!!</h1>
-    <h3>This is a homework.</h3>
-    <h3>hello</h3>
+    <div class="bigbox">
+        <div class="onebox"></div>
+        <div class="twobox"></div>
+        <div class="threebox"></div>
+    </div>
 </body>
 </html>
