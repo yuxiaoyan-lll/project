@@ -37,16 +37,24 @@
     </style>
 </head>
 <body>
+    <!-- <div>qisiwl</div> -->
     <div id="bigbox">
         <div class="onebox"></div>
-        <div class="twobox"></div>
-        <div class="threebox"></div>
+        <div class="twobox">
+            <textarea v-html="content"></textarea>
+        </div>
+        <div class="threebox" v-html="markdownPreview"></div>
     </div>
     <script>
         var vm=new Vue({
             el:"#bigbox",
             data:{
                 content:'text'
+            },
+            computed:{
+                markdownPreview(){
+                    return marked(this.content)
+                }
             }
         })
     </script>
