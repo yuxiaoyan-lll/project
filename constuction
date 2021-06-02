@@ -1,0 +1,3 @@
+git config --global user.email 1097767473@qq.com
+git config --global user.name "yuxiaoyan-lll"
+git config --global url."https://github.com.cnpmjs.org/".insteadOf"https://github.com/"
